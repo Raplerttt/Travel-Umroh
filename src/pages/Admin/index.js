@@ -1,0 +1,10 @@
+export { default as AdminDashboard } from './Dashboard';
+export { default as AdminPackages } from './Packages';
+export { default as PackageForm } from './Packages/PackageForm';
+export { default as AdminBookings } from './Bookings';
+export { default as BookingManagement } from './Bookings/BookingManagement';
+export { default as AdminUsers } from './Users';
+export { default as UserManagement } from './Users/UserManagement';
+export { default as AdminPayments } from './Payments';
+export { default as AdminGallery } from './Gallery';
+export { default as AdminSettings } from './Settings';
