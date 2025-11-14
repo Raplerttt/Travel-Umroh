@@ -60,11 +60,11 @@ const Header = () => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
+              aria-label="Toggle theme dark/light"
               className="p-2 text-gray-500 hover:text-gray-700 transition-colors"
             >
               {theme === 'light' ? '🌙' : '☀️'}
             </button>
-
             {/* Auth Buttons */}
             {isAuthenticated ? (
               <div className="flex items-center space-x-4">

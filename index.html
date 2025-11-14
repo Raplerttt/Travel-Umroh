@@ -3,11 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Essential Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Apps</title>
+    <meta name="theme-color" content="#1e40af" />
+    <meta name="description" content="Trusted Umroh travel services for your spiritual journey to Mecca and Medina. Experience blessed pilgrimages with expert guidance and comprehensive packages." />
+    <meta name="keywords" content="umroh, haji, pilgrimage, mecca, medina, spiritual journey, muslim travel" />
+    <meta name="author" content="Your Company Name" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Trusted Umroh Travel Services - Spiritual Journey to Mecca" />
+    <meta property="og:description" content="Experience blessed Umroh pilgrimages with expert guidance, quality accommodation, and comprehensive travel packages." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Your Travel Company" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Trusted Umroh Travel Services" />
+    <meta name="twitter:description" content="Experience blessed Umroh pilgrimages with expert guidance and comprehensive packages." />
+    <meta name="twitter:image" content="https://yourdomain.com/twitter-image.jpg" />
+    <meta name="twitter:site" content="@yourcompany" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Your Travel Company",
+      "description": "Trusted Umroh travel services for spiritual journeys to Mecca and Medina",
+      "url": "https://yourdomain.com",
+      "logo": "https://yourdomain.com/logo.png",
+      "telephone": "+1-234-567-8900",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "City",
+        "addressRegion": "State",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Su 24/7",
+      "serviceType": "Umroh Packages"
+    }
+    </script>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://api.yourdomain.com">
+    
+    <!-- Preload main font jika menggunakan custom font -->
+    <!-- <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin> -->
+    
+    <!-- Preload critical CSS (jika ada) -->
+    <!-- <link rel="preload" href="/src/index.css" as="style"> -->
+    
+    <title>Trusted Umroh Travel Services - Spiritual Journey to Mecca & Medina</title>
+    
+    <!-- Performance & Security Headers (bisa juga di server config) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Noscript fallback -->
+    <noscript>
+      <div style="text-align: center; padding: 2rem; font-family: Arial, sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+        <p>For immediate assistance, please contact us at <a href="tel:+12345678900">+1-234-567-8900</a></p>
+      </div>
+    </noscript>
+    
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Optional: Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+    <!-- <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script> -->
   </body>
 </html>
