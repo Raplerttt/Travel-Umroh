@@ -17,7 +17,7 @@ const Packages = () => {
   const itemsPerPage = 9;
 
   useEffect(() => {
-    // Fetch packages when component mounts
+
     getPackages();
   }, []);
 

@@ -1,0 +1,193 @@
+{
+    "contactInfo": {
+      "companyName": "Travel Umroh Bersama",
+      "address": "Jl. Masjid Agung No. 123, Jakarta Pusat 10110",
+      "phone": "+62 21 1234 5678",
+      "whatsapp": "+62 812 3456 7890",
+      "email": "info@travelumrohbersama.com",
+      "operationalHours": {
+        "weekdays": "08:00 - 17:00 WIB",
+        "weekends": "09:00 - 15:00 WIB"
+      },
+      "socialMedia": {
+        "facebook": "https://facebook.com/travelumrohbersama",
+        "instagram": "https://instagram.com/travelumrohbersama",
+        "youtube": "https://youtube.com/travelumrohbersama",
+        "tiktok": "https://tiktok.com/@travelumrohbersama"
+      },
+      "bankAccounts": [
+        {
+          "bankName": "Bank BCA",
+          "accountNumber": "1234567890",
+          "accountName": "PT Travel Umroh Bersama"
+        },
+        {
+          "bankName": "Bank Mandiri",
+          "accountNumber": "0987654321",
+          "accountName": "PT Travel Umroh Bersama"
+        }
+      ]
+    },
+    "faqCategories": [
+      {
+        "id": "pendaftaran",
+        "name": "Pendaftaran & Dokumen",
+        "icon": "📝",
+        "description": "Pertanyaan seputar proses pendaftaran dan kelengkapan dokumen"
+      },
+      {
+        "id": "pembayaran",
+        "name": "Pembayaran & Biaya",
+        "icon": "💳",
+        "description": "Pertanyaan mengenai metode pembayaran dan rincian biaya"
+      },
+      {
+        "id": "persiapan",
+        "name": "Persiapan Keberangkatan",
+        "icon": "🎒",
+        "description": "Pertanyaan tentang persiapan sebelum berangkat umroh"
+      },
+      {
+        "id": "ibadah",
+        "name": "Tata Cara Ibadah",
+        "icon": "🕌",
+        "description": "Pertanyaan seputar manasik dan tata cara ibadah umroh"
+      },
+      {
+        "id": "akomodasi",
+        "name": "Akomodasi & Transportasi",
+        "icon": "🏨",
+        "description": "Pertanyaan mengenai hotel, makan, dan transportasi"
+      },
+      {
+        "id": "kesehatan",
+        "name": "Kesehatan & Keamanan",
+        "icon": "🏥",
+        "description": "Pertanyaan tentang kesehatan dan keamanan selama umroh"
+      }
+    ],
+    "faqs": [
+      {
+        "id": 1,
+        "question": "Apa saja dokumen yang diperlukan untuk pendaftaran umroh?",
+        "answer": "Dokumen yang diperlukan:\n1. Fotokopi KTP\n2. Fotokopi Kartu Keluarga\n3. Paspor asli (minimal masa berlaku 7 bulan)\n4. Fotokopi buku nikah (bagi yang sudah menikah)\n5. Pas foto ukuran 4x6 latar putih (4 lembar)\n6. Sertifikat vaksin meningitis\n7. Surat keterangan sehat dari dokter",
+        "category": "pendaftaran",
+        "isFeatured": true,
+        "views": 245
+      },
+      {
+        "id": 2,
+        "question": "Berapa DP yang harus dibayar untuk booking paket umroh?",
+        "answer": "Down Payment (DP) yang harus dibayar adalah sebesar 30% dari total biaya paket umroh. Pembayaran pelunasan dilakukan paling lambat 45 hari sebelum keberangkatan.",
+        "category": "pembayaran",
+        "isFeatured": true,
+        "views": 189
+      },
+      {
+        "id": 3,
+        "question": "Apakah bisa mencicil biaya umroh?",
+        "answer": "Ya, kami menyediakan program cicilan dengan ketentuan:\n- DP 30% saat pendaftaran\n- Cicilan dapat diangsur maksimal 12 bulan\n- Pembayaran lunas 45 hari sebelum keberangkatan\n- Bebas biaya administrasi cicilan",
+        "category": "pembayaran",
+        "isFeatured": false,
+        "views": 167
+      },
+      {
+        "id": 4,
+        "question": "Kapan sebaiknya mulai mempersiapkan dokumen umroh?",
+        "answer": "Sebaiknya persiapkan dokumen minimal 3 bulan sebelum tanggal keberangkatan. Proses pembuatan paspor dan vaksin membutuhkan waktu, jadi persiapan lebih awal akan memudahkan proses administrasi.",
+        "category": "persiapan",
+        "isFeatured": true,
+        "views": 134
+      },
+      {
+        "id": 5,
+        "question": "Apa saja yang harus dipersiapkan sebelum berangkat umroh?",
+        "answer": "Persiapan yang perlu dilakukan:\n1. Persiapan fisik dengan olahraga teratur\n2. Persiapan mental dan spiritual\n3. Mengikuti manasik umroh\n4. Membawa obat-obatan pribadi\n5. Pakaian yang sesuai dengan syariat\n6. Perlengkapan ibadah (mukena, sajadah, dll)\n7. Uang saku dalam Riyal",
+        "category": "persiapan",
+        "isFeatured": false,
+        "views": 156
+      },
+      {
+        "id": 6,
+        "question": "Bagaimana tata cara umroh yang benar?",
+        "answer": "Tata cara umroh:\n1. Memakai ihram dari miqat\n2. Melakukan niat umroh\n3. Melakukan thawaf 7 putaran\n4. Melakukan sholat 2 rakaat di Maqam Ibrahim\n5. Melakukan sa'i antara Shafa dan Marwah\n6. Tahallul (mencukur atau memotong rambut)",
+        "category": "ibadah",
+        "isFeatured": true,
+        "views": 278
+      },
+      {
+        "id": 7,
+        "question": "Apa perbedaan umroh dan haji?",
+        "answer": "Perbedaan utama:\n- Umroh dapat dilakukan kapan saja, haji hanya di bulan Dzulhijjah\n- Umroh terdiri dari thawaf, sa'i, dan tahallul\n- Haji memiliki rangkaian ibadah yang lebih panjang termasuk wukuf di Arafah\n- Biaya umroh umumnya lebih terjangkau daripada haji",
+        "category": "ibadah",
+        "isFeatured": false,
+        "views": 198
+      },
+      {
+        "id": 8,
+        "question": "Berapa jarak hotel ke Masjidil Haram?",
+        "answer": "Kami menyediakan hotel dengan berbagai jarak:\n- Paket Eksekutif: 100-200 meter\n- Paket Reguler: 300-500 meter\n- Paket Hemat: 500-800 meter\nSemua hotel kami pilih yang memiliki akses mudah ke masjid.",
+        "category": "akomodasi",
+        "isFeatured": true,
+        "views": 145
+      },
+      {
+        "id": 9,
+        "question": "Apakah makanan disediakan selama umroh?",
+        "answer": "Ya, semua paket umroh kami sudah termasuk:\n- Sarapan pagi di hotel\n- Makan siang dan malam (buffet atau box)\n- Menu makanan Indonesia dan Arab\n- Air mineral dan buah-buahan\n- Katering khusus untuk yang memiliki diet tertentu",
+        "category": "akomodasi",
+        "isFeatured": false,
+        "views": 123
+      },
+      {
+        "id": 10,
+        "question": "Bagaimana kondisi cuaca di Arab Saudi?",
+        "answer": "Suhu di Arab Saudi bervariasi:\n- Musim panas: 35°C - 45°C (siang), 25°C - 30°C (malam)\n- Musim dingin: 20°C - 30°C (siang), 10°C - 15°C (malam)\nKami sarankan membawa pakaian yang sesuai dan selalu menjaga hidrasi.",
+        "category": "kesehatan",
+        "isFeatured": true,
+        "views": 167
+      },
+      {
+        "id": 11,
+        "question": "Apakah ada asuransi kesehatan selama umroh?",
+        "answer": "Ya, semua jamaah mendapatkan asuransi kesehatan yang mencakup:\n- Rawat inap dan rawat jalan\n- Evakuasi medis\n- Repatriasi\n- Pertanggungan hingga $50,000\nAsuransi sudah termasuk dalam biaya paket.",
+        "category": "kesehatan",
+        "isFeatured": false,
+        "views": 134
+      },
+      {
+        "id": 12,
+        "question": "Bagaimana jika paspor hilang selama umroh?",
+        "answer": "Tim kami akan membantu proses pembuatan paspor darurat di Kedutaan Besar Indonesia di Arab Saudi. Jamaah diwajibkan melaporkan ke tim pembimbing dan kepolisian setempat. Biaya penggantian paspor ditanggung jamaah.",
+        "category": "kesehatan",
+        "isFeatured": false,
+        "views": 98
+      },
+      {
+        "id": 13,
+        "question": "Apakah ada batasan usia untuk umroh?",
+        "answer": "Tidak ada batasan usia, namun untuk jamaah:\n- Di atas 70 tahun: wajib didampingi keluarga dan membawa surat keterangan sehat\n- Di bawah 12 tahun: wajib didampingi orang tua atau wali\n- Ibu hamil: disarankan konsultasi dokter sebelum berangkat",
+        "category": "pendaftaran",
+        "isFeatured": false,
+        "views": 112
+      },
+      {
+        "id": 14,
+        "question": "Bagaimana sistem pembimbing (muthawif) selama umroh?",
+        "answer": "Kami menyediakan muthawif yang:\n- Berpengalaman dan berlisensi\n- Menguasai bahasa Indonesia dan Arab\n- Mendampingi 24 jam\n- Membimbing ibadah dan manasik\n- Menjadi penghubung dengan pihak otoritas setempat",
+        "category": "mecca",
+        "isFeatured": false,
+        "views": 89
+      },
+      {
+        "id": 15,
+        "question": "Apakah bisa request kamar hotel tertentu?",
+        "answer": "Ya, kami menerima request kamar dengan ketentuan:\n- Request diajukan minimal 60 hari sebelum keberangkatan\n- Tersedia kamar pada periode tersebut\n- Mungkin ada tambahan biaya untuk request khusus\n- Konfirmasi kamar diberikan 30 hari sebelum keberangkatan",
+        "category": "akomodasi",
+        "isFeatured": false,
+        "views": 76
+      }
+    ],
+    "newsletterSubscribers": [],
+    "contactMessages": []
+  }

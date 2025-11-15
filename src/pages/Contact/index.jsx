@@ -92,7 +92,7 @@ const Contact = () => {
     {
       icon: '📞',
       title: 'Phone',
-      details: '+1 (555) 123-4567',
+      details: '+62 8111 1119 702',
       description: 'Mon to Fri 9am to 6pm'
     },
     {
@@ -103,15 +103,15 @@ const Contact = () => {
     },
     {
       icon: '📍',
-      title: 'Address',
-      details: '123 Travel Street, Mecca',
-      description: 'Saudi Arabia'
+      title: 'HMN Building',
+      details: 'Serang, Cipocok Jaya',
+      description: 'Indonesia'
     },
     {
       icon: '🕒',
       title: 'Office Hours',
       details: 'Monday - Saturday',
-      description: '9:00 AM - 6:00 PM'
+      description: '9:00 AM - 18:00 PM'
     }
   ];
 
@@ -240,7 +240,7 @@ const Contact = () => {
                 For urgent matters during travel
               </p>
               <div className="text-red-600 font-semibold">
-                +966 55 123 4567
+                +62 8111 1119 702
               </div>
               <p className="text-red-500 text-sm mt-1">
                 24/7 Available

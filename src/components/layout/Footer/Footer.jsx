@@ -18,6 +18,7 @@ const Footer = () => {
       title: 'Services',
       links: [
         { name: 'Umroh Packages', href: ROUTES.PACKAGES },
+        { name: 'Schedule', href: ROUTES.SCHEDULE },
         { name: 'Gallery', href: ROUTES.GALLERY },
         { name: 'Booking', href: ROUTES.PACKAGES },
       ],
@@ -40,9 +41,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <Link to={ROUTES.HOME} className="flex items-center mb-4">
               <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">U</span>
+                <span className="text-white font-bold text-sm">H</span>
               </div>
-              <span className="ml-2 text-xl font-semibold">Umroh Travel</span>
+              <span className="ml-2 text-xl font-semibold">Haymana - Tour & Travel</span>
             </Link>
             <p className="text-gray-400 mb-4">
               Providing the best Umroh travel experiences with professional guidance and excellent service.
@@ -91,9 +92,9 @@ const Footer = () => {
               Contact
             </h3>
             <address className="not-italic text-gray-400">
-              <p>123 Travel Street</p>
-              <p>Mecca, Saudi Arabia</p>
-              <p className="mt-2">+966 12 345 6789</p>
+              <p>HMN Building</p>
+              <p>Serang, Cipocok Jaya</p>
+              <p className="mt-2">0811-1111-9702</p>
               <p>info@umrohtravel.com</p>
             </address>
           </div>

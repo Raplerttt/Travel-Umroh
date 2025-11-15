@@ -4,6 +4,7 @@ import MainLayout from '../components/layout/MainLayout/MainLayout';
 import Home from '../pages/Home';
 import Packages from '../pages/Packages';
 import PackageDetail from '../pages/Packages/PackageDetail';
+import Schedule from '../pages/Schedule'
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Gallery from '../pages/Gallery';
@@ -47,6 +48,7 @@ const PublicRoutes = ({ isAuthenticated }) => {
         <Route index element={<Home />} />
         <Route path="packages" element={<Packages />} />
         <Route path="packages/:id" element={<PackageDetail />} />
+        <Route path="schedule" element={<Schedule />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="gallery" element={<Gallery />} />

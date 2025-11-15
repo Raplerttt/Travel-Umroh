@@ -1,0 +1,235 @@
+{
+    "schedules": [
+      {
+        "id": 1,
+        "packageId": 1,
+        "packageName": "Umroh Pertama",
+        "departureDate": "2025-07-15",
+        "returnDate": "2025-07-24",
+        "duration": "9 hari",
+        "availableSlots": 15,
+        "totalSlots": 30,
+        "price": 27500000,
+        "airline": "Oman Air",
+        "status": "available",
+        "departureAirport": "CGK - Jakarta",
+        "arrivalAirport": "JED - Jeddah",
+        "itinerary": [
+          {
+            "day": 1,
+            "date": "2024-03-15",
+            "title": "Keberangkatan dari Jakarta",
+            "description": "Meeting point di bandara Soekarno-Hatta, check-in, dan penerbangan menuju Jeddah",
+            "activities": [
+              "Meeting point jam 14:00",
+              "Check-in baggage",
+              "Penerbangan SV 816 (18:00 - 23:00)"
+            ]
+          },
+          {
+            "day": 2,
+            "date": "2024-03-16",
+            "title": "Tiba di Jeddah & Menuju Makkah",
+            "description": "Tiba di bandara Jeddah, proses imigrasi, dan perjalanan menuju Makkah",
+            "activities": [
+              "Tiba di Jeddah jam 23:00",
+              "Proses imigrasi",
+              "Perjalanan ke Makkah",
+              "Check-in hotel",
+              "Istirahat"
+            ]
+          },
+          {
+            "day": 3,
+            "date": "2024-03-17",
+            "title": "Umroh Hari Pertama",
+            "description": "Melaksanakan umroh pertama dengan bimbingan muthawif",
+            "activities": [
+              "Sholat Subuh berjamaah",
+              "Manasik praktik",
+              "Berangkat ke Miqat",
+              "Melaksanakan umroh",
+              "Thawaf dan Sa'i"
+            ]
+          }
+        ],
+        "hotelMakkah": "Maysan Al Maqom 4*",
+        "hotelMadinah": "Jawharat Raseed 3*",
+        "included": ["Tiket pesawat", "Hotel", "Visa", "Makan", "Transport", "Zamzam"],
+        "excluded": ["Biaya pribadi", "Tips", "Vaksin"]
+      },
+      {
+        "id": 2,
+        "packageId": 2,
+        "packageName": "Umroh Plus Dubai",
+        "departureDate": "2025-09-18",
+        "returnDate": "2025-09-28",
+        "duration": "10 hari",
+        "availableSlots": 8,
+        "totalSlots": 20,
+        "price": 31500000,
+        "airline": "Saudi Arabia Airlanes",
+        "status": "available",
+        "departureAirport": "CGK - Jakarta",
+        "arrivalAirport": "JED - Jeddah",
+        "itinerary": [
+          {
+            "day": 1,
+            "date": "2024-04-10",
+            "title": "Keberangkatan Kelas Bisnis",
+            "description": "Keberangkatan dengan Emirates kelas bisnis",
+            "activities": [
+              "Meeting point jam 12:00",
+              "Lounge access",
+              "Penerbangan EK 356 (15:00 - 21:00)"
+            ]
+          }
+        ],
+        "hotelMakkah": "Snood Ajyad/Setaraf 3*",
+        "hotelMadinah": "Andalus As Salam / Setaraf 3*",
+        "included": ["Tiket pesawat bisnis", "Hotel 5*", "Visa premium", "Makan premium", "Transport luxury", "Zamzam 10L"],
+        "excluded": ["Biaya pribadi", "Tips", "Shopping"]
+      },
+      {
+        "id": 3,
+        "packageId": 3,
+        "packageName": "Umroh Signature",
+        "departureDate": "2025-11",
+        "returnDate": "2025-11",
+        "duration": "9 hari",
+        "availableSlots": 12,
+        "totalSlots": 25,
+        "price": 33000000,
+        "airline": "Lion Air",
+        "status": "available",
+        "departureAirport": "CGK - Jakarta",
+        "arrivalAirport": "JED - Jeddah",
+        "itinerary": [
+          {
+            "day": 1,
+            "date": "2024-04-01",
+            "title": "Keberangkatan di Bulan Ramadhan",
+            "description": "Keberangkatan khusus Ramadhan dengan program ibadah tambahan",
+            "activities": [
+              "Meeting point jam 16:00",
+              "Briefing ibadah Ramadhan",
+              "Penerbangan GA 960 (19:00 - 01:00)"
+            ]
+          }
+        ],
+        "hotelMakkah": "AZKA SAFA 4*",
+        "hotelMadinah": "Concord Al Khaer 4*",
+        "included": ["Tiket pesawat", "Hotel 4*", "Visa", "Makan sahur & buka", "Transport", "Program Ramadhan"],
+        "excluded": ["Biaya pribadi", "Tips", "Vaksin"]
+      },
+      {
+        "id": 4,
+        "packageId": 4,
+        "packageName": "Umroh Plus Turkey",
+        "departureDate": "2025-09",
+        "returnDate": "2025-09",
+        "duration": "15 hari",
+        "availableSlots": 22,
+        "totalSlots": 40,
+        "price": 39500000,
+        "airline": "Turkish Airlanes",
+        "status": "available",
+        "departureAirport": "CGK - Jakarta",
+        "arrivalAirport": "JED - Jeddah",
+        "itinerary": [
+          {
+            "day": 1,
+            "date": "2024-03-20",
+            "title": "Keberangkatan Ekonomi",
+            "description": "Keberangkatan dengan budget airline",
+            "activities": [
+              "Meeting point jam 20:00",
+              "Check-in",
+              "Penerbangan JT 782 (22:00 - 04:00)"
+            ]
+          }
+        ],
+        "hotelMakkah": "Rayana Makkah 4*",
+        "hotelMadinah": "Concord Al Khaer 4*",
+        "Hotel Istanbul": "Park in / Setaraf 4*",
+        "included": ["Tiket pesawat", "Hotel", "Visa", "Makan", "Transport", "Zamzam"],
+        "excluded": ["Biaya pribadi", "Tips", "Vaksin", "Bagasi tambahan"]
+      },
+      {
+        "id": 5,
+        "packageId": 5,
+        "packageName": "Umroh Plus Turki",
+        "departureDate": "2024-05-05",
+        "returnDate": "2024-05-20",
+        "duration": "16 hari",
+        "availableSlots": 10,
+        "totalSlots": 18,
+        "price": 65000000,
+        "airline": "Turkish Airlines",
+        "status": "available",
+        "departureAirport": "CGK - Jakarta",
+        "arrivalAirport": "JED - Jeddah",
+        "itinerary": [
+          {
+            "day": 1,
+            "date": "2024-05-05",
+            "title": "Keberangkatan ke Jeddah",
+            "description": "Penerbangan menuju Jeddah via Istanbul",
+            "activities": [
+              "Meeting point jam 10:00",
+              "Check-in",
+              "Penerbangan TK 56 (13:00 - 19:00)"
+            ]
+          }
+        ],
+        "hotelMakkah": "Swissotel Makkah 4*",
+        "hotelMadinah": "Al Mas Hotel Madinah 4*",
+        "included": ["Tiket pesawat", "Hotel 4*", "Visa Umroh & Turki", "Makan", "Transport", "Tour guide"],
+        "excluded": ["Biaya pribadi", "Tips", "Shopping", "Vaksin"]
+      },
+      {
+        "id": 6,
+        "packageId": 6,
+        "packageName": "Umroh Plus Dubai",
+        "departureDate": "2024-04-25",
+        "returnDate": "2024-05-09",
+        "duration": "15 hari",
+        "availableSlots": 14,
+        "totalSlots": 20,
+        "price": 58000000,
+        "airline": "Emirates",
+        "status": "available",
+        "departureAirport": "CGK - Jakarta",
+        "arrivalAirport": "DXB - Dubai",
+        "itinerary": [
+          {
+            "day": 1,
+            "date": "2024-04-25",
+            "title": "Keberangkatan ke Dubai",
+            "description": "Penerbangan langsung ke Dubai",
+            "activities": [
+              "Meeting point jam 14:00",
+              "Check-in",
+              "Penerbangan EK 358 (17:00 - 22:00)"
+            ]
+          }
+        ],
+        "hotelMakkah": "Movenpick Makkah 4*",
+        "hotelMadinah": "Al Eiman Royal Madinah 4*",
+        "included": ["Tiket pesawat", "Hotel 4*", "Visa Umroh & Dubai", "Makan", "Transport", "Tour Dubai"],
+        "excluded": ["Biaya pribadi", "Tips", "Shopping", "Aktivitas optional"]
+      }
+    ],
+    "departureMonths": [
+      { "value": "3", "label": "Maret 2024", "count": 2 },
+      { "value": "4", "label": "April 2024", "count": 3 },
+      { "value": "5", "label": "Mei 2024", "count": 1 }
+    ],
+    "airlines": [
+      "Saudi Airlines",
+      "Emirates",
+      "Garuda Indonesia",
+      "Lion Air",
+      "Turkish Airlines"
+    ]
+  }

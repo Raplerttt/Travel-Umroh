@@ -1,10 +1,13 @@
+// App.js
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { AppProvider } from './contexts/AppContext';
 import { AuthProvider } from './contexts/AuthContext';
 import { BookingProvider } from './contexts/BookingContext';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { PrayerTimeProvider } from './contexts/PrayerTimeContext';
 import { AppRoutes } from './routes';
+import { PrayerTimeBar } from './components/common/prayer/PrayerTime';
 
 function App() {
   return (
@@ -13,7 +16,15 @@ function App() {
         <AppProvider>
           <AuthProvider>
             <BookingProvider>
-              <AppRoutes />
+              <PrayerTimeProvider>
+                <div className="min-h-screen flex flex-col">
+                  <PrayerTimeBar />
+                  {/* Main Content */}
+                  <main className="flex-1">
+                    <AppRoutes />
+                  </main>
+                </div>
+              </PrayerTimeProvider>
             </BookingProvider>
           </AuthProvider>
         </AppProvider>

@@ -1,0 +1,51 @@
+{
+    "packages": [
+      {
+        "id": "web-basic",
+        "title": "Basic Website Package",
+        "description": "Perfect for small businesses and personal portfolios",
+        "price": 499,
+        "duration": "2 weeks",
+        "features": [
+          "5 Custom Pages",
+          "Responsive Design",
+          "Contact Form",
+          "Basic SEO",
+          "1 Month Support"
+        ],
+        "category": "web",
+        "popular": false
+      },
+      {
+        "id": "web-professional",
+        "title": "Professional Website Package",
+        "description": "Ideal for growing businesses with advanced needs",
+        "price": 999,
+        "duration": "3-4 weeks",
+        "features": [
+          "10 Custom Pages",
+          "CMS Integration",
+          "E-commerce Functionality",
+          "Advanced SEO",
+          "3 Months Support"
+        ],
+        "category": "web",
+        "popular": true
+      },
+      {
+        "id": "mobile-basic",
+        "title": "Basic Mobile App",
+        "description": "Simple mobile application for iOS and Android",
+        "price": 1999,
+        "duration": "4-6 weeks",
+        "features": [
+          "Cross-platform Development",
+          "Basic UI/UX Design",
+          "App Store Deployment",
+          "3 Months Support"
+        ],
+        "category": "mobile",
+        "popular": false
+      }
+    ]
+  }
