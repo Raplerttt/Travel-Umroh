@@ -229,12 +229,13 @@ const Home = () => {
             <div className="inline-flex items-center px-12 py-6 mb-8">
               <img src={logo} alt="" height={2000} width={2000} />
             </div>
+            
             <div className="flex flex-row gap-2 sm:gap-4 justify-center w-full">
             <Link to={ROUTES.PACKAGES} aria-label="Lihat paket umroh kami">
               <Button 
                 size="lg" 
                 variant="secondary" 
-                className="px-4 py-3 min-w-[120px] sm:min-w-[140px] bg-black text-primary-700 hover:bg-gray-100 text-sm sm:text-base"
+                className="px-3 py-2 sm:px-5 sm:py-3 lg:px-6 lg:py-4 min-w-[100px] sm:min-w-[130px] lg:min-w-[160px] bg-black text-primary-700 hover:bg-gray-100 text-xs sm:text-sm lg:text-base font-medium"
               >
                 Lihat Paket Umroh
               </Button>
@@ -243,7 +244,7 @@ const Home = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="px-4 py-3 min-w-[120px] sm:min-w-[140px] border-white text-white hover:bg-white hover:text-primary-700 text-sm sm:text-base"
+                className="px-3 py-2 sm:px-5 sm:py-3 lg:px-6 lg:py-4 min-w-[100px] sm:min-w-[130px] lg:min-w-[160px] border-white text-white hover:bg-white hover:text-primary-700 text-xs sm:text-sm lg:text-base font-medium"
               >
                 Konsultasi Gratis
               </Button>
