@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
 import { useTheme } from '../../../contexts/ThemeContext';
 import { ROUTES } from '../../../routes/routeConstants';
 import Button from '../../common/button/Button';
+import logo from '../../../assets/images/LOGO-HAYMANA.svg'
 
 const Header = () => {
   const { isAuthenticated, user, logout } = useAuth();
   const { theme, toggleTheme } = useTheme();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Effect untuk menangani scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navigation = [
     { name: 'Home', href: ROUTES.HOME },
@@ -51,17 +64,24 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white shadow-sm border-b sticky top-0 z-40">
+      <header className={`
+        fixed top-0 left-0 right-0 z-50 transition-all duration-300
+        ${isScrolled 
+          ? 'bg-transparent' 
+          : 'bg-transparent'
+        }
+      `}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to={ROUTES.HOME} className="flex items-center flex-shrink-0">
-              <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">H</span>
-              </div>
-              <span className="ml-2 text-lg font-semibold text-gray-900 truncate">
-                Haymana Tour
-              </span>
+              <img
+                src={logo}
+                alt="Haymana Tour Logo"
+                className={`w-52 h-32 object-contain transition-all duration-300 ${
+                  isScrolled ? 'filter brightness-0' : ''
+                }`}
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -71,10 +91,14 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   className={`
-                    px-3 py-2 text-sm font-medium rounded-md transition-colors
+                    px-3 py-2 text-bold font-medium rounded-md transition-all duration-300
                     ${isActiveRoute(item.href)
-                      ? 'text-primary-600 bg-primary-50'
-                      : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+                      ? isScrolled 
+                        ? 'text-black' 
+                        : 'text-white bg-white/20'
+                      : isScrolled
+                        ? 'text-black hover:text-gray-900 hover:bg-gray-50'
+                        : 'text-white hover:text-white hover:bg-white/20'
                     }
                   `}
                 >
@@ -89,7 +113,9 @@ const Header = () => {
               <button
                 onClick={toggleTheme}
                 aria-label="Toggle theme dark/light"
-                className="p-2 text-gray-500 hover:text-gray-700 transition-colors"
+                className={`p-2 transition-colors duration-300 ${
+                  isScrolled ? 'text-gray-500 hover:text-gray-700' : 'text-white hover:text-white/80'
+                }`}
               >
                 {theme === 'light' ? '🌙' : '☀️'}
               </button>
@@ -97,7 +123,11 @@ const Header = () => {
               {/* Mobile Menu Button */}
               <button
                 onClick={toggleMobileMenu}
-                className="md:hidden p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-50 transition-colors"
+                className={`md:hidden p-2 rounded-md transition-colors duration-300 ${
+                  isScrolled 
+                    ? 'text-gray-500 hover:text-gray-700 hover:bg-gray-50' 
+                    : 'text-white hover:text-white/80 hover:bg-white/20'
+                }`}
                 aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? (
@@ -116,18 +146,25 @@ const Header = () => {
                 {isAuthenticated ? (
                   <div className="flex items-center space-x-3">
                     <Link to={ROUTES.DASHBOARD}>
-                      <Button variant="outline" size="sm">
+                      <Button 
+                        variant={isScrolled ? "outline" : "ghost"} 
+                        size="sm"
+                        className={isScrolled ? "" : "text-white border-white hover:bg-white/20"}
+                      >
                         Dashboard
                       </Button>
                     </Link>
                     <div className="flex items-center space-x-2">
-                      <span className="text-sm text-gray-700">
+                      <span className={`text-sm transition-colors duration-300 ${
+                        isScrolled ? 'text-gray-700' : 'text-white'
+                      }`}>
                         Hi, {user?.name}
                       </span>
                       <Button
-                        variant="ghost"
+                        variant={isScrolled ? "ghost" : "outline"}
                         size="sm"
                         onClick={logout}
+                        className={isScrolled ? "" : "text-white border-white hover:bg-white/20"}
                       >
                         Logout
                       </Button>
@@ -150,7 +187,7 @@ const Header = () => {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden border-t border-gray-200 animate-fade-in">
+            <div className="md:hidden border-t border-gray-200/50 animate-fade-in bg-transparent backdrop-blur-md">
               {/* Mobile Navigation */}
               <nav className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
@@ -159,10 +196,10 @@ const Header = () => {
                     to={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`
-                      block px-3 py-3 text-base font-medium rounded-lg transition-all
+                      block px-3 py-3 text-white font-medium rounded-lg transition-all
                       ${isActiveRoute(item.href)
-                        ? 'text-primary-600 bg-primary-50 border-r-2 border-primary-600'
-                        : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+                        ? 'text-primary-600 bg-transparent border-r-2 border-primary-600'
+                        : 'text-white-700 hover:text-gray-900 hover:bg-gray-50'
                       }
                     `}
                   >
@@ -172,7 +209,7 @@ const Header = () => {
               </nav>
 
               {/* Mobile Auth Section */}
-              <div className="px-2 pt-4 pb-3 border-t border-gray-200 space-y-3">
+              <div className="px-2 pt-4 pb-3 border-t border-gray-200/50 space-y-3">
                 {isAuthenticated ? (
                   <>
                     <div className="px-3 py-2 bg-gray-50 rounded-lg">
@@ -222,7 +259,7 @@ const Header = () => {
       </header>
 
       {/* Mobile Bottom Navigation */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50 safe-area-bottom">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-gray-200/50 shadow-lg z-50 safe-area-bottom">
         <div className="flex justify-around items-center h-16 px-2">
           {mobileBottomNavigation.slice(0, 2).map((item) => (
             <Link

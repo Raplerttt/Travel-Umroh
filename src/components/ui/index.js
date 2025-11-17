@@ -4,3 +4,4 @@ export { default as PrayerTime } from './PrayerTime/PrayerTime';
 export { default as HajjGuide } from './HajjGuide/HajjGuide';
 export { default as BookingSteps } from './BookingSteps/BookingSteps';
 export { default as PassengerForm } from './PassengerForm/PassengerForm';
+export { default as ImageSlider } from './ImageSlider/ImageSlider';

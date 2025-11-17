@@ -1,0 +1,96 @@
+{
+    "stats": [
+      { "number": "5000+", "label": "Jamaah Bahagia" },
+      { "number": "50+", "label": "Paket Umroh" },
+      { "number": "10+", "label": "Tahun Pengalaman" },
+      { "number": "24/7", "label": "Dukungan Pelanggan" }
+    ],
+    "features": [
+      {
+        "icon": "🕌",
+        "title": "Bimbingan Ahli",
+        "description": "Pemandu berpengalaman mendampingi perjalanan spiritual Anda."
+      },
+      {
+        "icon": "🏨",
+        "title": "Akomodasi Berkualitas",
+        "description": "Hotel nyaman dekat Masjidil Haram dengan fasilitas terbaik."
+      },
+      {
+        "icon": "✈️",
+        "title": "Penerbangan Langsung",
+        "description": "Pengaturan penerbangan mudah dengan maskapai terpercaya."
+      },
+      {
+        "icon": "📋",
+        "title": "Dokumentasi Lengkap",
+        "description": "Kami urus semua visa dan dokumen perjalanan Anda."
+      },
+      {
+        "icon": "🍽️",
+        "title": "Makanan Bergizi",
+        "description": "Makanan sehat dan lezat selama perjalanan Anda."
+      },
+      {
+        "icon": "🚌",
+        "title": "Transportasi Nyaman",
+        "description": "Bus ber-AC untuk semua kebutuhan transportasi Anda."
+      }
+    ],
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Ahmad & Siti",
+        "location": "Jakarta",
+        "rating": 5,
+        "text": "Alhamdulillah, perjalanan umroh kami sangat berkesan. Pelayanan Haymana Tour sangat profesional dan penuh perhatian.",
+        "image": "/images/testimonial-1.jpg",
+        "date": "November 2024"
+      },
+      {
+        "id": 2,
+        "name": "Budi Family",
+        "location": "Bandung",
+        "rating": 5,
+        "text": "Hotel dekat dengan Masjidil Haram, makanan enak, dan pemandu sangat sabar membimbing. Recommended!",
+        "image": "/images/testimonial-2.jpg",
+        "date": "Oktober 2024"
+      },
+      {
+        "id": 3,
+        "name": "Ibu Maryam",
+        "location": "Surabaya",
+        "rating": 5,
+        "text": "Sebagai jamaah lansia, saya sangat terbantu dengan pelayanan yang diberikan. Transportasi sangat nyaman.",
+        "image": "/images/testimonial-3.jpg",
+        "date": "September 2024"
+      }
+    ],
+    "promo": [
+      {
+        "id": 1,
+        "title": "Paket Umroh Awal Tahun",
+        "discount": "15%",
+        "description": "Diskon khusus untuk pendaftaran sebelum 31 Januari 2025",
+        "validUntil": "2025-01-31",
+        "bgColor": "bg-gradient-to-r from-green-500 to-emerald-600"
+      },
+      {
+        "id": 2,
+        "title": "Paket Umroh Keluarga",
+        "discount": "2 FOR 1",
+        "description": "Khusus paket keluarga - gratis 1 orang untuk setiap 5 pendaftar",
+        "validUntil": "2025-02-28",
+        "bgColor": "bg-gradient-to-r from-blue-500 to-purple-600"
+      },
+      {
+        "id": 3,
+        "title": "Paket Umroh Ramadhan",
+        "discount": "10%",
+        "description": "Bersiaplah menyambut Ramadhan di tanah suci dengan promo spesial",
+        "validUntil": "2025-03-15",
+        "bgColor": "bg-gradient-to-r from-orange-500 to-red-500"
+      }
+    ]
+  }
+  

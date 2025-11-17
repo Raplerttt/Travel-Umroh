@@ -6,6 +6,7 @@ import { ROUTES } from '../../routes/routeConstants';
 import FormInput from '../../components/forms/FormInput/FormInput';
 import Button from '../../components/common/button/Button';
 import LoadingSpinner from '../../components/common/loading/LoadingSpinner';
+import logo from '../../assets/images/LOGO-HAYMANA.svg';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -87,9 +88,11 @@ const Login = () => {
         {/* Header */}
         <div className="text-center">
           <Link to={ROUTES.HOME} className="inline-flex items-center">
-            <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">U</span>
-            </div>
+            <img
+              src={logo}
+              alt="Haymana Tour Logo"
+              className="w-100 h-12 object-contain transition-all duration-300 filter brightness-0"
+            />
           </Link>
           <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
             Sign in to your account

@@ -207,12 +207,10 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/hero-umroh.jpg)',
+            backgroundImage: 'url(/kabah.jpg)',
             backgroundAttachment: 'fixed'
           }}
         >
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-600/80"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
