@@ -19,7 +19,7 @@ function App() {
               <PrayerTimeProvider>
                 <div className="min-h-screen flex flex-col">
                     {/* Sembunyikan di mobile, tampilkan di md ke atas */}
-                    <div className="hidden md:block">
+                    <div className="lg:hidden">
                       <PrayerTimeBar />
                     </div>
                   {/* Main Content */}

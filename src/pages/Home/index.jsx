@@ -5,6 +5,7 @@ import { usePackages } from '../../hooks/usePackages';
 import { useGallery } from '../../hooks/useGallery';
 import Button from '../../components/common/button/Button';
 import LoadingSpinner from '../../components/common/loading/LoadingSpinner';
+import logo from '../../assets/images/Asset2.svg'
 
 // Lazy load dengan fallback
 const PackageCard = React.lazy(() => 
@@ -207,7 +208,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/kabah.jpg)',
+            backgroundImage: 'url(/SAMPUL-WEB-POLOS.jpg)',
             backgroundAttachment: 'fixed'
           }}
         >
@@ -216,21 +217,9 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
           <div className="max-w-4xl mx-auto">
             {/* Badge Travel Terbaik */}
-            <div className="inline-flex items-center px-6 py-3 bg-white bg-opacity-20 backdrop-blur-sm rounded-full mb-8 border border-white border-opacity-30">
-              <span className="text-white text-lg font-semibold">
-                🏆 Travel Umroh Terpercaya 2024
-              </span>
+            <div className="inline-flex items-center px-12 py-6 mb-8">
+              <img src={logo} alt="" height={2000} width={2000} />
             </div>
-
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Haymana Tour
-            </h1>
-            <p className="text-2xl md:text-3xl text-white mb-8 opacity-95 font-light">
-              Travel Umroh Terbaik untuk Pengalaman Spiritual Tak Terlupakan
-            </p>
-            <p className="text-xl text-white mb-12 max-w-2xl mx-auto opacity-90">
-              Percayakan perjalanan ibadah umroh Anda pada kami. Pengalaman 10+ tahun melayani jamaah Indonesia dengan hati dan profesionalisme.
-            </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to={ROUTES.PACKAGES} aria-label="Lihat paket umroh kami">
@@ -243,20 +232,6 @@ const Home = () => {
                   Konsultasi Gratis
                 </Button>
               </Link>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
-              {STATS_DATA.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                    {stat.number}
-                  </div>
-                  <div className="text-white text-sm opacity-90">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>
@@ -309,26 +284,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section aria-labelledby="testimonials-heading" className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Testimoni Jamaah
-            </h2>
-            <p className="text-xl text-gray-600">
-              Pengalaman langsung dari jamaah yang telah berangkat umroh bersama kami
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {TESTIMONIALS_DATA.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} {...testimonial} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Featured Packages */}
       <section aria-labelledby="packages-heading" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -369,33 +324,29 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Gallery/Dokumentasi Section */}
-      <section aria-labelledby="gallery-heading" className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Dokumentasi Perjalanan
-              </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Momen-momen berharga jamaah kami di tanah suci
+      {/* Testimonials Section */}
+      <section aria-labelledby="testimonials-heading" className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Testimoni Jamaah
+            </h2>
+            <p className="text-xl text-gray-600">
+              Pengalaman langsung dari jamaah yang telah berangkat umroh bersama kami
             </p>
-            </div>
-            {galleryLoading ? (
-              <div className="flex justify-center py-12">
-              <LoadingSpinner size="md" />
-            </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {limitedGallery.map(item => (
-                <GalleryItem key={item.id} {...item} />
-              ))}
-            </div>
-          )}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {TESTIMONIALS_DATA.map((testimonial) => (
+              <TestimonialCard key={testimonial.id} {...testimonial} />
+            ))}
+          </div>
         </div>
       </section>
 
+
       {/* CTA Section */}
-      <section aria-labelledby="cta-heading" className="py-16 bg-primary-600 text-white mb-10">
+      <section aria-labelledby="cta-heading" className="py-16 bg-primary-600 text-white mb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             {/* Gambar di sebelah kiri */}

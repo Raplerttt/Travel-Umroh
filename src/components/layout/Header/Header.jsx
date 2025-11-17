@@ -65,7 +65,7 @@ const Header = () => {
   return (
     <>
       <header className={`
-        fixed top-0 left-0 right-0 z-50 transition-all duration-300
+        absolute top-4 left-0 right-0 z-50 transition-all duration-300
         ${isScrolled 
           ? 'bg-transparent' 
           : 'bg-transparent'
@@ -78,14 +78,14 @@ const Header = () => {
               <img
                 src={logo}
                 alt="Haymana Tour Logo"
-                className={`w-52 h-32 object-contain transition-all duration-300 ${
+                className={`w-40 h-38 object-contain transition-all duration-300 ${
                   isScrolled ? 'filter brightness-0' : ''
                 }`}
               />
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex space-x-6 items-center justify-center">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -109,16 +109,6 @@ const Header = () => {
 
             {/* Right Section */}
             <div className="flex items-center space-x-3">
-              {/* Theme Toggle */}
-              <button
-                onClick={toggleTheme}
-                aria-label="Toggle theme dark/light"
-                className={`p-2 transition-colors duration-300 ${
-                  isScrolled ? 'text-gray-500 hover:text-gray-700' : 'text-white hover:text-white/80'
-                }`}
-              >
-                {theme === 'light' ? '🌙' : '☀️'}
-              </button>
 
               {/* Mobile Menu Button */}
               <button
@@ -175,10 +165,10 @@ const Header = () => {
                     variant="primary"
                     size="sm"
                     onClick={handleWhatsAppClick}
-                    className="flex items-center space-x-2 bg-green-500 hover:bg-green-600 border-green-500 hover:border-green-600"
+                    className="flex items-center space-x-2 bg-[#18409f] hover:bg-[#15388d] border-[#18409f] hover:border-[#15388d] text-white py-2.5"
                   >
                     <WhatsAppIcon />
-                    <span>Chat WhatsApp</span>
+                    <span>Konsultasi Sekarang</span>
                   </Button>
                 )}
               </div>
