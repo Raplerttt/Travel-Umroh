@@ -204,16 +204,25 @@ const Home = () => {
         aria-label="Hero section – Mulai Perjalanan Spiritual Anda ke Mekah dan Madinah"
         className="relative min-h-screen flex items-center justify-center"
       >
-        {/* Background Image dengan overlay */}
+      {/* Background Image dengan overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/SAMPUL-WEB-POLOS.jpg)',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        {/* Mobile-specific background image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
           style={{
-            backgroundImage: 'url(/SAMPUL-WEB-POLOS.jpg)',
-            backgroundAttachment: 'fixed'
+            backgroundImage: 'url(/SAMPUL-WEB-POTRAIT.jpg)',
+            backgroundAttachment: 'scroll'
           }}
         >
         </div>
-        
+      </div>
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
           <div className="max-w-4xl mx-auto">
             {/* Badge Travel Terbaik */}
