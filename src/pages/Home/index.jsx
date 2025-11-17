@@ -223,25 +223,32 @@ const Home = () => {
         </div>
       </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-26 text-center">
           <div className="max-w-4xl mx-auto">
             {/* Badge Travel Terbaik */}
             <div className="inline-flex items-center px-12 py-6 mb-8">
               <img src={logo} alt="" height={2000} width={2000} />
             </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to={ROUTES.PACKAGES} aria-label="Lihat paket umroh kami">
-                <Button size="lg" variant="secondary" className="bg-black text-primary-700 hover:bg-gray-100">
-                  Lihat Paket Umroh
-                </Button>
-              </Link>
-              <Link to={ROUTES.CONTACT} aria-label="Konsultasi gratis">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary-700">
-                  Konsultasi Gratis
-                </Button>
-              </Link>
-            </div>
+            <div className="flex flex-row gap-2 sm:gap-4 justify-center w-full">
+            <Link to={ROUTES.PACKAGES} aria-label="Lihat paket umroh kami">
+              <Button 
+                size="lg" 
+                variant="secondary" 
+                className="px-4 py-3 min-w-[120px] sm:min-w-[140px] bg-black text-primary-700 hover:bg-gray-100 text-sm sm:text-base"
+              >
+                Lihat Paket Umroh
+              </Button>
+            </Link>
+            <Link to={ROUTES.CONTACT} aria-label="Konsultasi gratis">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="px-4 py-3 min-w-[120px] sm:min-w-[140px] border-white text-white hover:bg-white hover:text-primary-700 text-sm sm:text-base"
+              >
+                Konsultasi Gratis
+              </Button>
+            </Link>
+          </div>
           </div>
         </div>
 
