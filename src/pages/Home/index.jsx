@@ -6,6 +6,7 @@ import { useGallery } from '../../hooks/useGallery';
 import Button from '../../components/common/button/Button';
 import LoadingSpinner from '../../components/common/loading/LoadingSpinner';
 import logo from '../../assets/images/Asset2.svg'
+import PartnerSlider from '../../components/ui/PartnerSlider/PartnerSlider';
 
 // Lazy load dengan fallback
 const PackageCard = React.lazy(() => 
@@ -439,6 +440,122 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section aria-labelledby="partners-heading" className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <h2 id="partners-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Mitra Kerjasama Kami
+      </h2>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        Bekerjasama dengan berbagai pihak terpercaya untuk memastikan kenyamanan perjalanan ibadah umroh Anda
+      </p>
+    </div>
+
+    {/* Slider Container */}
+    <div className="relative">
+      {/* Slider Track */}
+      <div className="overflow-hidden">
+        <div className="flex animate-slide gap-8 lg:gap-12 py-4">
+          {/* Duplicate items untuk infinite loop */}
+          {[...Array(2)].map((_, setIndex) => (
+            <React.Fragment key={setIndex}>
+              {[
+                { 
+                  name: "Saudi Airlines", 
+                  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Saudi_Airlines_logo.svg/1280px-Saudi_Airlines_logo.svg.png",
+                  type: "Maskapai"
+                },
+                { 
+                  name: "Garuda Indonesia", 
+                  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Garuda_Indonesia_Logo_%282009%29.svg/1280px-Garuda_Indonesia_Logo_%282009%29.svg.png",
+                  type: "Maskapai"
+                },
+                { 
+                  name: "Emirates", 
+                  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Emirates_logo.svg/2560px-Emirates_logo.svg.png",
+                  type: "Maskapai"
+                },
+                { 
+                  name: "Qatar Airways", 
+                  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Qatar_Airways_Logo.svg/1280px-Qatar_Airways_Logo.svg.png",
+                  type: "Maskapai"
+                },
+                { 
+                  name: "Mövenpick Hotels", 
+                  logo: "https://seeklogo.com/images/M/movenpick-logo-4D3E40951A-seeklogo.com.png",
+                  type: "Hotel"
+                },
+                { 
+                  name: "Hilton Hotels", 
+                  logo: "https://seeklogo.com/images/H/hilton-logo-0E54E6D8A1-seeklogo.com.png",
+                  type: "Hotel"
+                },
+                { 
+                  name: "Marriott", 
+                  logo: "https://seeklogo.com/images/M/marriott-hotels-logo-8D313EEF6E-seeklogo.com.png",
+                  type: "Hotel"
+                },
+                { 
+                  name: "Turkish Airlines", 
+                  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Turkish_Airlines_logo_2019_compact.svg/1280px-Turkish_Airlines_logo_2019_compact.svg.png",
+                  type: "Maskapai"
+                }
+              ].map((partner, index) => (
+                <div
+                  key={`${setIndex}-${index}`}
+                  className="flex-shrink-0 w-40 lg:w-48 flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 group"
+                >
+                  <div className="flex items-center justify-center h-16 mb-3">
+                    <img 
+                      src={partner.logo} 
+                      alt={partner.name}
+                      className="max-h-12 w-auto object-contain opacity-70 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span className="text-sm font-medium text-gray-700 text-center">
+                    {partner.name}
+                  </span>
+                  <span className="text-xs text-gray-500 mt-1">
+                    {partner.type}
+                  </span>
+                </div>
+              ))}
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
+
+      {/* Gradient Overlay untuk efek fade */}
+      <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+    </div>
+
+    {/* Navigation Dots */}
+    <div className="flex justify-center mt-8 space-x-2">
+      {[0, 1].map((dot) => (
+        <button
+          key={dot}
+          className="w-2 h-2 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors duration-200"
+          aria-label={`Slide ${dot + 1}`}
+        />
+      ))}
+    </div>
+
+    {/* Badge Legal */}
+    <div className="text-center mt-12 pt-8 border-t border-gray-200">
+      <p className="text-gray-500 text-sm">
+        Terdaftar dan diawasi oleh Kementerian Agama Republik Indonesia
+      </p>
+    </div>
+  </div>
+      </section>
+      <section aria-labelledby="partners-heading" className="py-16 bg-white">
+      <PartnerSlider />
       </section>
     </div>
   );

@@ -70,6 +70,7 @@ const Header = () => {
           ? 'bg-transparent' 
           : 'bg-transparent'
         }
+          lg:top-4 top-56
       `}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -97,7 +98,7 @@ const Header = () => {
                         ? 'text-black' 
                         : 'text-white bg-white/20'
                       : isScrolled
-                        ? 'text-black hover:text-gray-900 hover:bg-gray-50'
+                        ? 'text-white hover:text-gray-900 hover:bg-gray-50'
                         : 'text-white hover:text-white hover:bg-white/20'
                     }
                   `}

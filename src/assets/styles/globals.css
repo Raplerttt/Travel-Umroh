@@ -379,3 +379,32 @@ html, body {
     padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
   }
 }
+
+/* Tambahkan di file CSS global atau menggunakan style tag */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 30s linear infinite;
+}
+
+/* Hover pause */
+.animate-slide:hover {
+  animation-play-state: paused;
+}
+
+/* Tambahkan di file CSS global */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}

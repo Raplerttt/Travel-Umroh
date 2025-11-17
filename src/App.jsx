@@ -18,10 +18,6 @@ function App() {
             <BookingProvider>
               <PrayerTimeProvider>
                 <div className="min-h-screen flex flex-col">
-                    {/* Sembunyikan di mobile, tampilkan di md ke atas */}
-                    <div className="lg:hidden">
-                      <PrayerTimeBar />
-                    </div>
                   {/* Main Content */}
                   <main className="flex-1">
                     <AppRoutes />
